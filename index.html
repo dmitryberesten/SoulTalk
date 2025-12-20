@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>SoulTalk — Простір для двох</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="manifest" href="site.webmanifest">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <h1>SoulTalk</h1>
+            <span class="heart-icon">❤️</span>
+        </div>
+        <p class="subtitle">Час для щирих розмов</p>
+    </header>
+
+    <main id="app">
+        <div id="stack-container">
+        </div>
+
+        <div id="empty-state" class="hidden">
+            <div class="finish-icon">✨</div>
+            <p>Усі питання вичерпано. Кожна відповідь зробила вас ближчими.</p>
+            <button class="restart-btn" onclick="location.reload()">Почати знову</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
