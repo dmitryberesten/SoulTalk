@@ -29,13 +29,25 @@
     </header>
 
     <main id="app">
-        <div id="stack-container">
+        <div id="menu-screen">
+            <h2>Оберіть категорію</h2>
+            <button class="category-btn" data-category="romance" onclick="selectCategory('romance')">❤️
+                Романтика</button>
+            <button class="category-btn" data-category="future" onclick="selectCategory('future')">🔮 Майбутнє</button>
+            <button class="category-btn" data-category="deep" onclick="selectCategory('deep')">🧠 Глибокі теми</button>
+            <button class="category-btn" data-category="fun" onclick="selectCategory('fun')">🎉 Розваги</button>
         </div>
 
-        <div id="empty-state" class="hidden">
-            <div class="finish-icon">✨</div>
-            <p>Усі питання вичерпано. Кожна відповідь зробила вас ближчими.</p>
-            <button class="restart-btn" onclick="location.reload()">Почати знову</button>
+        <div id="game-screen" style="display:none;">
+            <button id="back-btn" onclick="goBack()">⬅️ Назад</button>
+            <div id="stack-container">
+            </div>
+
+            <div id="empty-state" class="hidden">
+                <div class="finish-icon">✨</div>
+                <p>Усі питання вичерпано. Кожна відповідь зробила вас ближчими.</p>
+                <button class="restart-btn" onclick="location.reload()">Почати знову</button>
+            </div>
         </div>
     </main>
 
